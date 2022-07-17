@@ -1,101 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Connecting Lives</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
     <link rel="stylesheet" href="../css/style_login.css">
-
-    <!--Bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <!--Jquery-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-
-    <link rel="stylesheet" href="../css/owl/owl.carousel.min.css" />
-    <link rel="stylesheet" href="../css/owl/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="../css/magnific-popup.css" />
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
-
 <body>
+    
+    <div class="container">
+        
+        <!-- inicio primeiro conteudo -->
+        <div class="content primeiro-conteudo">
+            <div class="primeira-coluna">
+                <h2 class="title title-primary">Bem vindo</h2>
+                <p class="description description-primary">Para entrar na sua conta</p>
+                <p class="description description-primary">Faça login com seus dados</p>
+                <button id="signin" class="btn btn-primary">Entrar</button>
+            </div>   
+            <!-- inicio segunda coluna --> 
+            <div class="segunda-coluna">
+                <h2 class="title title-second">Connecting Lives</h2>
+            </div><!-- fim segunda coluna -->
+        </div><!--fim primeiro conteudo -->
 
-    <!--HEADER-->
-    <div id="header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-                <a class="navbar-brand" href="#">
-                    <img src="../assets/logo.jpeg" class="img-fluid" />
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Página Inicial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="html/login.html">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cadastro Beneficiário</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cadastro Equipamento</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Grupo</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <!-- inicio segundo-conteudo -->
+        <div class="content segundo-conteudo">
+            <div class="primeira-coluna">
+                <h2 class="title title-primary">Connecting Lives</h2>
+               
+                <p class="description description-primary">Cadastre-se e venha fazer parte da nossa história!</p>
+                <p class="description description-primary">Ainda não tem cadastro?</p>
+                <p class="description description-primary"><a class="description description-primary" href="../index.html">Clique aqui!</a></p>
+                <!--<button id="signup" class="btn btn-primary">Início</button>-->
+            </div>
+            <!-- inicio segunda coluna -->
+            <div class="segunda-coluna">
+                <h2 class="title title-second">Login</h2>
+               
+                <p class="description description-second">Acesse com o seu email:</p>
+                <form class="form">
+                
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                
+                    <a class="password" href="#">Esqueceu sua senha?</a>
+                    <button class="btn btn-second">Entrar</button>
+                </form>
+            </div><!-- fim segunda coluna -->
+        </div><!-- fim segundo-conteudo -->
     </div>
-
-
-
-    <div class="login-container">
-        <h1>Login</h1>
-        <form action="">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off">
-            <label for="password">Senha</label>
-            <input type="password" name="password" id="password" placeholder="Digite a sua senha">
-            <a href="#" id="forgot-pass">Esqueceu a senha?</a>
-            <input type="submit" value="Login">
-        </form>
-        <div id="register-container">
-            <P>Ainda não tem uma conta?</P>
-            <a href="#">Registrar</a>
-        </div>
-    </div>
-
-
-    <!--JS-->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/isotope.pkgd.min.js"></script>
-    <script src="../js/magnify/jquery.magnific-popup.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="../js/login.js"></script>
 </body>
-
 </html>
