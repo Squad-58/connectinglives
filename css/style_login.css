@@ -27,7 +27,7 @@ body {
 .content::before {
     content: "";
     position: absolute;
-    background-color:#4d686f;
+    background-color:#ff7d01;
     width: 40%;
     height: 100%;
     border-top-left-radius: 15px;
@@ -45,7 +45,7 @@ body {
     color: #fff;
 }
 .title-second {
-    color: #58af9b;
+    color: #ff7d01;
 }
 .description {
     font-size: 14px;
@@ -56,7 +56,7 @@ body {
     color: #fff;
 }
 .description-second {
-    color: #7f8c8d;
+    color: #ff7d01;
 }
 .btn {
     border-radius: 15px;
