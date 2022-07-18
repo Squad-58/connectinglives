@@ -12,7 +12,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d0e0eb ;
+  background-color: #fff ;
 }
 
 
@@ -45,4 +45,59 @@ body{
   padding: 3rem;
 }
 
-.form
+.form-header{
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-button{
+  display: flex;
+  align-items: center;
+}
+
+.login-button button{
+  border: none;
+  background-color: #F27405;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button button:hover{
+  background-color: #F59C4E;
+}
+
+.login-button button a{
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+}
+
+.form-header h1::after{
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #F27405;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.input-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.input-box{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.input-box input{
+  margin: 0.6 rem 0;
+}
