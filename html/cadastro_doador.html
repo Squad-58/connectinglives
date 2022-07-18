@@ -15,57 +15,56 @@
 </head>
 
 <body>
-
-    <div id="header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-                <a class="navbar-brand" href="#">
-                    <img src="../assets/logo.jpeg" class="img-fluid rounded-circle"
-                        style="border:solid black 5px; height:80px; width:80px" />
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Página Inicial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Beneficiário</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Doador</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Quero Doar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cadastro_voluntario.html">Seja Voluntário</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Grupo</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
-
     <!--formulário-->
-
     <div class="box">
+        
+        <div id="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/logo.jpeg" class="img-fluid rounded-circle"
+                            style="border:solid black 5px; height:80px; width:80px" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Página Inicial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Beneficiário</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Doador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Quero Doar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cadastro_voluntario.html">Seja Voluntário</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Grupo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    
         <form action="">
+            <legend><b>Cadastro de doador</b></legend><br>
             <fieldset>
-                <legend><b>Cadastro de doador</b></legend><br>
-
+                
                 <div class="inputBox">
                     <input type="texto" name="nome" id="nome" class="inputUser" required>
                     <label for="nome" class="labelInput">Nome completo</label>
@@ -93,8 +92,6 @@
                 <label for="prefiro não dizer">prefiro não dizer</label>
                 <br><br>
 
-
-
                 <label for="data_nascimento"><b>Data de nascimento</b></label>
                 <input type="date" id="feminino" nome="data_nascimento" value="data_nascimento" required>
                 <br><br>
@@ -115,11 +112,9 @@
                 <br><br>
 
                 <button class="btn">Cadastrar equipamento</button>
-
             </fieldset>
         </form>
     </div>
-
 
  <!--JQuery-->
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
