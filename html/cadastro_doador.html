@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Doador</title>
+
+    <link rel="stylesheet" href="../css/style_tela_doador.css" />
+    <link rel="shortcut icon" href="assets/logo.jpeg" type="image/x-icon" />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--formulário-->
+    <div class="box">
+        
+        <div id="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/logo.jpeg" class="img-fluid rounded-circle"
+                            style="border:solid black 5px; height:80px; width:80px" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Página Inicial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Beneficiário</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Doador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Quero Doar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cadastro_voluntario.html">Seja Voluntário</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Grupo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    
+        <form action="">
+            <legend><b>Cadastro de doador</b></legend><br>
+            <fieldset>
+                
+                <div class="inputBox">
+                    <input type="texto" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                </div>
+                <br><br>
+
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone" class="labelInput">Telefone</label>
+                </div>
+                <br>
+                <p>Gênero:</p>
+                <input type="radio" id="feminino" nome="genero" value="feminino" required>
+                <label for="feminino">Feminino</label><br>
+                <input type="radio" id="Masculino" nome="genero" value="Masculino" required>
+                <label for="Masculino">Masculino</label><br>
+                <input type="radio" id="Outro" nome="genero" value="Outro" required>
+                <label for="Outro">Outro(Qual?)</label><br>
+                <input type="radio" id="prefiro não dizer" nome="genero" value="prefiro não dizer" required>
+                <label for="prefiro não dizer">prefiro não dizer</label>
+                <br><br>
+
+                <label for="data_nascimento"><b>Data de nascimento</b></label>
+                <input type="date" id="feminino" nome="data_nascimento" value="data_nascimento" required>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado" class="labelInput">Estado</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                    <label for="endereco" class="labelInput">Endereço</label>
+                </div>
+                <br><br>
+
+                <button class="btn">Cadastrar equipamento</button>
+            </fieldset>
+        </form>
+    </div>
+
+ <!--JQuery-->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
