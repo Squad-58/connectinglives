@@ -15,7 +15,6 @@ body {
 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 background-color: aliceblue;
 
-
 }
 .box{
     border: 3px solid #F27405;
@@ -30,6 +29,7 @@ background-color: aliceblue;
     background-attachment: fixed;
     margin-top: 5%;  
     width: 30%;
+
 }
 
 legend{
@@ -80,15 +80,14 @@ legend{
 
 @media screen and (max-width: 1040px) {
 
-    .box{
+    .box {
         border: 3px solid #F27405;
-        position: absolute;
         transform: translate(-50%,-50%);
         background-color: rgba(0,0,0,0.8);
         border-radius: 15px;
         color: white;
         background-attachment: fixed;
-        margin-top: 15%;  
+        margin-top: 30%;  
         width: 90%;
     }
 
