@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 *{
   padding: 0;
   margin:0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+}
+
+#header .nav-link {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-weight: bold;
+  padding-left: 0;
+  padding-right: 0;
+  color: #000;
+  border-bottom: solid 4px transparent;
 }
 
 body{
@@ -11,14 +20,16 @@ body{
   display: flex;
 }
 
-#header{
+#containerHd{
   height: 8vh;
  justify-content: flex-start
 
 }
 
 .hd{
-  
+  border-bottom:solid 4px orangered;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
 }
 
 .frm{
@@ -63,6 +74,7 @@ body{
 }
 
 .form-header{
+  margin-top: 2rem;
   margin-bottom: 3rem;
   display: flex;
   justify-content: space-between;
@@ -166,7 +178,7 @@ color: #000000be;
 
 .continue-button button{
   width: 100%;
-  margin-top: .0010rem;
+  margin-bottom: 2.5rem;
   border: none;
   background-color: #F27405;
   padding: 0.62rem;
@@ -220,4 +232,5 @@ color: #000000be;
     justify-content: space-around;
     max-height: 15rem;
   }
+
 }
