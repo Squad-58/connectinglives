@@ -1,0 +1,156 @@
+.box{
+    border: 3px solid #F27405;
+    background-color: rgba(0,0,0,0.8);
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+}
+
+legend{
+    border:1px solid #F27405;
+    padding: 10px;
+    text-align: center;
+    background-color: #F27405;
+    border-radius: 8px;
+   
+}
+
+.tipo_equipamento {
+    display: flex;
+    width: fit-content;
+  }
+
+.tipo_equipamento p  {
+    padding: 10px 50px 0px 10px;
+}
+
+.tipo_equipamento label  {
+    padding: 10px 50px 0px 10px;
+}
+
+.radio {
+    flex:  auto;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
+.blocos{
+    padding: 25px 10px 0px 10px;
+    border:solid;
+    border-radius: 10px;
+}
+
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom:1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing:2px;
+}
+
+.labelInput{
+    position: absolute;
+    top:0px;
+    left: 0%;
+    pointer-events: none;
+    transition:.5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top:-20px;
+    font-size: 12px;
+    color: #F27405;
+}
+
+.alinhamento_dados_pessoais{
+    display: flex;
+    padding: 5px 5px 0px 5px;
+    width: fit-content;
+}
+
+#nome_completo{
+    width: 500px;
+}
+  
+#data_nascimento{
+    border:none;
+    border-radius:10px;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#cpf{
+    border:none;
+    border-radius:10px;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+
+#btn{
+    border-radius: 10px;
+    margin-right: 100px;
+    background-color:  #F27405;
+    color: white;
+    border:none;
+    width: 100px;
+}
+
+
+@media screen and (max-width: 1040px) {
+
+    .box {
+        border: 3px solid #F27405;
+        background-color: rgba(0,0,0,0.8);
+        padding: 15px;
+        border-radius: 15px;
+        color: white;
+        
+    }
+
+    .tipo_equipamento {
+        display: flex;
+    }
+    .tipo_equipamento p  {
+        padding: 5px 10px 0px 10px;
+    }
+    
+    .tipo_equipamento label  {
+        padding: 10px 50px 0px 10px;
+    }
+    
+    .alinhamento_dados_pessoais{
+        display:contents;
+        padding: 5px 5px 0px 5px;
+
+    }
+      
+    #nome_completo{
+        width: fit-content;
+    }
+
+    
+    #btn{
+        border-radius: 10px;
+        margin-right: 100px;
+        margin-bottom: 10px;
+        background-color:  #F27405;
+        color: white;
+        border:none;
+        width: 100px;
+    }
+
+  
+
+
+}
