@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro equipamento</title>
+
+    <link rel="stylesheet" href="../css/style_equipamentos.css" />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/logo.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/owl/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="../css/magnific-popup.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/logo.jpeg" class="img-fluid rounded-circle"
+                        style="border:solid black 5px; height:80px; width:80px" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Página Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastroBeneficiario.html">Beneficiário</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastro_doador.html">Doador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastro_equipamento.html">Quero Doar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastro_voluntario.html">Seja Voluntário</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Grupo</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--formulário-->
+    <div class="container box">
+        <form action="">
+
+            <div class="container">
+                <legend><b>Doação de Equipamentos</b></legend><br>
+
+                <div class="blocos">
+                    <p>Tipo de equipamento:</p>
+                    <input type="radio" id="celular" name="celular" value="Celular" required>
+                    <label for="celular">Celular</label><br>
+                    <input type="radio" id="computador" name="computador" value="Computador" required>
+                    <label for="computador">Computador</label><br>
+                    <input type="radio" id="notebook" name="notebook" value="noteboook" required>
+                    <label for="noteboook">Notebook</label><br>
+                    <input type="radio" id="tablet" name="tablet" value="tablet" required>
+                    <label for="tablet">Tablet</label><br>
+                    <input type="radio" id="acessorio" name="acessorio" value="Acessório" required>
+                    <label for="acessorio">Acessório</label><br>
+                    <input type="radio" id="peca" name="peca" value="Peça" required>
+                    <label for="peca">Peça</label><br>
+                    <input type="radio" id="outros" name="outros" value="Outros" required>
+                    <label for="outros">Outros</label><br>
+                </div><br>
+
+                <div class="blocos">
+                    <p>Situação do aparelho:</p>
+                    <input type="radio" id="funcionando" name="funcionando" value="Funcionando" required>
+                    <label for="funcionando">Funcionando</label><br>
+                    <input type="radio" id="funcionando_parcialmente" name="funcionando_parcialmente"
+                        value="Funcionando parcialmente" required>
+                    <label for="funcionando_parcialmente">Funcionando parcialmente</label><br>
+                    <input type="radio" id="quebrado" name="quebrado" value="Quebrado" required>
+                    <label for="quebrado">Quebrado </label><br>
+                </div><br>
+
+                <div class="blocos">
+                    <div class="inputBox">
+                        <input type="text" name="descricao" id="descricao" class="inputUser" required>
+                        <label for="descricao" class="labelInput">Descrição do equipamento</label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="marca" id="marca" class="inputUser" required>
+                        <label for="marca" class="labelInput">Marca</label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="modelo" id="modelo" class="inputUser" required>
+                        <label for="modelo" class="labelInput">Modelo</label>
+                    </div><br>
+                    <div>
+                        <label for="quantidade">Quantidade</label>
+                        <input type="number" name="quantidade" id="quantidade" required>
+                    </div>
+                </div><br>
+            </div><br>
+            <button id="btn" type="reset">Limpar</button>
+            <button id="btn" type="submit">Salvar</button>
+    </div>
+    </form>
+    </div>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
