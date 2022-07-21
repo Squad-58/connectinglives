@@ -1,106 +1,217 @@
-@media (min-width: 992px) {
-    #header .navbar-brand img {
-      max-width: 80px;
-    }
-    #header .nav-link {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-    #header .img-fluid {
-      max-width: 80%;
-    }
-    #slider .img-fluid {
-      max-width: 80%;
-    }
-  }
-  
-  /* MAX MEDIUM */
-  @media (max-width: 991.98px) {
-    #header .navbar-brand img {
-      max-width: 80px;
-    }
-    #header .navbar-collapse {
-      width: 100%;
-    }
-    #contato .email img {
-      width: 90px;
-      top: -40px;
-    }
-  }
-  
-  @media (max-width: 767.98px) {
-    #header .navbar-brand img {
-      max-width: 80px;
-    }
-    #servicos a.destaque .img-container {
-      height: 120px;
-    }
-    #servicos a.destaque .img-container img {
-      max-height: 120px;
-    }
-    #clientes .cliente-texto .imagem {
-      padding: 10px 0 30px 0;
-    }
-  
-    #clientes .cliente-texto .imagem img {
-      max-width: 150px;
-    }
-  
-    #contato .email {
-      padding: 60px 30px 50px 30px;
-    }
-    #contato .email form {
-      width: 100%;
-      flex-direction: column;
-    }
-    #contato ul {
-      padding-top: 30px;
-      justify-content: center;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.container {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F27405;
+  padding: 1rem;
+}
+
+.form-image img {
+  width: 31rem;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 3rem;
+}
+
+.form-header {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+}
+
+.login-button button {
+  border: none;
+  background-color: #F27405;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button button:hover {
+  background-color: #F27405;
+}
+
+.login-button button a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+}
+
+.form-header h1::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #F27405;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.input-box input {
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+  font-size: 0.8rem;
+}
+
+.input-box input:hover {
+  background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+  outline: 1px solid #6c63ff;
+}
+
+.input-box label,
+.gender-title h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.input-box input::placeholder {
+  color: #000000be;
+}
+
+.gender-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.62rem;
+  padding: 0 .5rem;
+}
+
+.gender-input {
+  display: flex;
+  align-items: center;
+}
+
+.gender-input input {
+  margin-right: 0.35rem;
+}
+
+.gender-input label {
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.continue-button button {
+  width: 100%;
+  margin-top: 2.5rem;
+  border: none;
+  background-color: #F27405;
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.continue-button button:hover {
+  background-color: #6b63fff1;
+}
+
+.continue-button button a {
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+@media screen and (max-width: 1330px) {
+  .form-image {
+    display: none;
   }
 
-  #header {
+  .container {
+    width: 50%;
+  }
+
+  .form {
     width: 100%;
-    background-color: transparent;
-    transition: background ease-out 0.2s;
   }
-  
-  #header.active {
-    position: fixed;
-    background: #fff;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
-    z-index: 9999;
+}
+
+@media screen and (max-width: 1064px) {
+  .container {
+    width: 90%;
+    height: auto;
   }
-  
-  #header .navbar-collapse {
-    width: auto;
+
+  .input-group {
+    flex-direction: column;
+    z-index: 5;
+    padding-right: 5rem;
+    max-height: 10rem;
+    overflow-y: scroll;
+    flex-wrap: nowrap;
   }
-  
-  #header .nav-link {
-    text-transform: uppercase;
-    font-weight: 500;
-    padding-left: 0;
-    padding-right: 0;
-    color: #000;
-    border-bottom: solid 4px transparent;
+
+  .gender-inputs {
+    margin-top: 2rem;
   }
-  
-  #header .nav-link:hover {
-    border-bottom: solid 4px var(--secondary);
-    color: var(--secondary);
+
+  .gender-group {
+    flex-direction: column;
   }
-  
-  #slider {
-    background: url(../assets/slider-bg.svg) no-repeat center bottom;
-    background-size: contain;
+
+  .gender-title h6 {
+    margin: 0;
   }
-  
-  #slider h1 {
-    text-transform: uppercase;
-    font-weight: 900;
+
+  .gender-input {
+    margin-top: 0.5rem;
   }
-  
-  #slider h4 {
-    font-size: 18px;
-    text-transform: uppercase;
-  }
+}
