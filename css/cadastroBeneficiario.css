@@ -1,26 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
-
-* {
+*{
   padding: 0;
-  margin: 0;
+  margin:0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
 }
 
-body {
+#header .nav-link {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-weight: bold;
+  padding-left: 0;
+  padding-right: 0;
+  color: #000;
+  border-bottom: solid 4px transparent;
+}
+
+
+body{
+  flex-direction: column;
+  display: flex;
+}
+
+#containerHd{
+  height: 8vh;
+ justify-content: flex-start
+
+}
+
+.hd{
+  border-bottom:solid 4px orangered;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+}
+
+.frm{
   width: 100%;
   height: 100vh;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background-color: #D8E8F2 ;
 }
 
-.container {
+
+.container{
   width: 80%;
   height: 80vh;
   display: flex;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
 }
 
 .form-image {
@@ -28,36 +56,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F27405;
+  background-color: #F27405;;
   padding: 1rem;
 }
 
-.form-image img {
+.form-image{
   width: 31rem;
 }
 
-.form {
+.formulario{
   width: 50%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  flex-direction: #fff;
   padding: 3rem;
+  height: 100%;
 }
 
-.form-header {
+.form-header{
+  margin-top: 2rem;
   margin-bottom: 3rem;
   display: flex;
   justify-content: space-between;
 }
 
-.login-button {
+.login-button{
   display: flex;
   align-items: center;
 }
 
-.login-button button {
+.login-button button{
   border: none;
   background-color: #F27405;
   padding: 0.4rem 1rem;
@@ -65,17 +94,17 @@ body {
   cursor: pointer;
 }
 
-.login-button button:hover {
-  background-color: #F27405;
+.login-button button:hover{
+  background-color: #F59C4E;
 }
 
-.login-button button a {
+.login-button button a{
   text-decoration: none;
   font-weight: 500;
   color: #fff;
 }
 
-.form-header h1::after {
+.form-header h1::after{
   content: '';
   display: block;
   width: 5rem;
@@ -86,34 +115,33 @@ body {
   border-radius: 10px;
 }
 
-.input-group {
+.input-group{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1rem 0;
 }
 
-.input-box {
+.input-box{
   display: flex;
   flex-direction: column;
   margin-bottom: 1.1rem;
 }
 
-.input-box input {
+.input-box input{
   margin: 0.6rem 0;
   padding: 0.8rem 1.2rem;
   border: none;
   border-radius: 10px;
   box-shadow: 1px 1px 6px #0000001c;
-  font-size: 0.8rem;
 }
 
-.input-box input:hover {
+.input-box input:hover{
   background-color: #eeeeee75;
 }
 
 .input-box input:focus-visible {
-  outline: 1px solid #6c63ff;
+  outline: 1px solid #F27405;
 }
 
 .input-box label,
@@ -124,34 +152,34 @@ body {
 }
 
 .input-box input::placeholder {
-  color: #000000be;
+color: #000000be;
 }
 
 .gender-group {
-  display: flex;
+  display:flex;
   justify-content: space-between;
   margin-top: 0.62rem;
-  padding: 0 .5rem;
+  padding: 0 0 .5rem;
 }
 
 .gender-input {
-  display: flex;
+  display:flex;
   align-items: center;
 }
 
-.gender-input input {
+.gender-input input{
   margin-right: 0.35rem;
 }
 
-.gender-input label {
+.gender-input label{
   font-size: 0.81rem;
   font-weight: 600;
   color: #000000c0;
 }
 
-.continue-button button {
+.continue-button button{
   width: 100%;
-  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
   border: none;
   background-color: #F27405;
   padding: 0.62rem;
@@ -159,59 +187,51 @@ body {
   cursor: pointer;
 }
 
-.continue-button button:hover {
-  background-color: #6b63fff1;
+.continue-button button:hover{
+  background-color: #F59C4E;
 }
 
 .continue-button button a {
   text-decoration: none;
-  font-size: 0.93rem;
+  font-size: 0.93;
   font-weight: 500;
   color: #fff;
 }
 
-@media screen and (max-width: 1330px) {
-  .form-image {
+@media screen and (max-width: 1214px) {
+  .form-image{
     display: none;
   }
 
-  .container {
-    width: 50%;
+  .container{
+    width: 100%;
+    height: 100%;
+    
   }
 
-  .form {
+  .formulario{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .form{
     width: 100%;
   }
 }
 
 @media screen and (max-width: 1064px) {
-  .container {
+  .container{
     width: 90%;
     height: auto;
+    align-items: center;
   }
 
-  .input-group {
-    flex-direction: column;
-    z-index: 5;
-    padding-right: 5rem;
-    max-height: 10rem;
+  .input-group{
     overflow-y: scroll;
-    flex-wrap: nowrap;
+    justify-content: space-around;
+    max-height: 15rem;
   }
 
-  .gender-inputs {
-    margin-top: 2rem;
-  }
-
-  .gender-group {
-    flex-direction: column;
-  }
-
-  .gender-title h6 {
-    margin: 0;
-  }
-
-  .gender-input {
-    margin-top: 0.5rem;
-  }
 }
