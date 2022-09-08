@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/logo.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/css/owl/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Connecting Lives :: Cadastro</title>
+  </head>
+  <body>
+    <div class="d-flex flex-column wrapper">
+      <header>
+        <!--HEADER-->
+        <div id="header">
+          <div class="container">
+            <nav
+              class="navbar navbar-expand-lg navbar-light border-bottom justify-content-between"
+            >
+              <a class="navbar-brand" href="#">
+                <img
+                  src="assets/logo.jpeg"
+                  class="img-fluid rounded-circle"
+                  style="border: solid black 5px"
+                />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Página Inicial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="html/sobre.html">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="html/quem_somos.html">Grupo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="html/cadastro.html.html"
+                      >Cadastre-se</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="html/login.html">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!--//HEADER-->
+      </header>
+      <main class="flex-fill">
+        <div class="container">
+          <h1>Cadastro</h1>
+          <hr />
+          <form class="row g-3">
+            <div class="col-12">
+              <label for="txtNome" class="form-label">Nome Completo</label>
+              <input type="text" class="form-control" id="txtNome" />
+            </div>
+            <div class="col-md-6">
+              <label for="numCPF" class="form-label">CPF</label>
+              <span class="form-text">(Somente números)</span>
+              <input type="number" class="form-control" id="numCPF" />
+            </div>
+            <div class="col-md-6">
+              <div class="mb-2">
+              <label for="numTel" class="form-label">Telefone</label>
+              <span class="form-text">(Com DDD, somente números)</span>
+              <input type="tel" class="form-control" id="numTel" />
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkZap"
+                />
+                <label class="form-check-label" for="checkZap">
+                  WhatsApp
+                </label>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+              <label for="txtEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="txtEmail" />
+            </div>
+            <div class="col-md-6">
+              <label for="txtSenha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="txtSenha" />
+            </div>
+            <div class="col-10">
+              <label for="txtEndereco" class="form-label">Endereço</label>
+              <input type="text" class="form-control" id="txtEndereco" />
+            </div>
+            <div class="col-2">
+              <label for="numNumero" class="form-label">Número</label>
+              <input type="number" class="form-control" id="numNumero" />
+            </div>
+            <div class="col-12">
+              <label for="txtComplemento" class="form-label">Complemento</label>
+              <input type="text" class="form-control" id="txtComplemento" />
+            </div>
+            <div class="col-md-6">
+              <label for="txtCidade" class="form-label">Cidade</label>
+              <input type="text" class="form-control" id="txtCidade" />
+            </div>
+            <div class="col-md-4">
+              <label for="listaEstado" class="form-label">Estado</label>
+              <select id="listaEstado" class="form-select">
+                <option>AC</option>
+                <option>AL</option>
+                <option>AP</option>
+                <option>AM</option>
+                <option>BA</option>
+                <option>CE</option>
+                <option>DF</option>
+                <option>ES</option>
+                <option>GO</option>
+                <option>MA</option>
+                <option>MT</option>
+                <option>MS</option>
+                <option>MG</option>
+                <option>PA</option>
+                <option>PB</option>
+                <option>PR</option>
+                <option>PE</option>
+                <option>PI</option>
+                <option>RJ</option>
+                <option>RN</option>
+                <option>RS</option>
+                <option>RO</option>
+                <option>RR</option>
+                <option>SC</option>
+                <option>SP</option>
+                <option>SE</option>
+                <option>TO</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="numCEP" class="form-label">CEP</label>
+              <input type="number" class="form-control" id="numCEP" />
+            </div>
+            <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkZap"
+                />
+                <label class="form-check-label" for="checkZap">
+                  Deseja receber contato para nos auxiliar como voluntário.
+                </label>
+              </div>
+            <div class="col-12 mb-3">
+              <input type="button" class="btn btn-primary" value="CADASTRE-SE" onclick="window.location.href=`/cadastro_sucesso.html`">
+            </div>
+          </form>
+        </div>
+      </main>
+      <!--FOOTER-->
+      <footer class="border-top text-muted bg-light" id="contato">
+        <div class="container">
+          <div class="logo py-4">
+            <div class="row">
+              <div class="col-md-6 align-self-center text-md-left text-center">
+                <img src="assets/logo.jpeg" class="img-fluid rounded-circle" />
+                <p align:right;><strong>Connecting Lives</strong></p>
+              </div>
+              <div class="col-md-6 align-self-center text-right">
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/"
+                      ><img src="assets/facebook.svg"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/home"
+                      ><img src="assets/twitter.svg"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/"
+                      ><img src="assets/instagram.svg"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/"
+                      ><img src="assets/linkedin.svg"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/"
+                      ><img src="assets/youtube.svg"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--//FOOTER-->
+    </div>
+    <!--JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/magnify/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
