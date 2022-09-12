@@ -50,10 +50,12 @@
     </header>
     <main class="flex-fill">
       <div class="container">
-        <div class="row justify-content-center">
-          <form class="col-sm-10 col-md-8 col-lg-6 mb-3">
-            <h1 class="mb-3">Cadastro do Doador</h1>
-            <span class="mb-3">Selecione o tipo de Doador</span>
+        <div class="row gx-3">
+          <div>
+            <h1 class="mb-3">Cadastro do Doação</h1>
+          </div>
+          <div class="col-4">
+            <h3 class="mb-3">Selecione o tipo de Doador</h3>
             <div>
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="checkFis" />
@@ -61,8 +63,6 @@
                   Pessoa Física
                 </label>
               </div>
-            </div>
-            <div>
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="checkJur" />
                 <label class="form-check-label" for="checkJur">
@@ -70,39 +70,49 @@
                 </label>
               </div>
             </div>
-            <div class="col-sm-10 col-md-8 col-lg-6 mb-3">
-              <label for="txtDataDoação" class="form-label">Data da Doação</label>
-              <input type="date" class="form-control" id="txtDataDoação" />
+            <div class="mt-3">
+              <h3 class="mb-3">Tipo de equipamento:</h3>
+              <input type="radio" id="celular" name="celular" value="Celular" required>
+              <label for="celular">Celular</label><br>
+              <input type="radio" id="computador" name="computador" value="Computador" required>
+              <label for="computador">Computador</label><br>
+              <input type="radio" id="notebook" name="notebook" value="noteboook" required>
+              <label for="noteboook">Notebook</label><br>
+              <input type="radio" id="tablet" name="tablet" value="tablet" required>
+              <label for="tablet">Tablet</label><br>
+              <input type="radio" id="acessorio" name="acessorio" value="Acessório" required>
+              <label for="acessorio">Acessório</label><br>
+              <input type="radio" id="peca" name="peca" value="Peça" required>
+              <label for="peca">Peça</label><br>
+              <input type="radio" id="outros" name="outros" value="Outros" required>
+              <label for="outros">Outros</label>
             </div>
-            <p>Tipo de equipamento:</p>
-            <input type="radio" id="celular" name="celular" value="Celular" required>
-            <label for="celular">Celular</label><br>
-            <input type="radio" id="computador" name="computador" value="Computador" required>
-            <label for="computador">Computador</label><br>
-            <input type="radio" id="notebook" name="notebook" value="noteboook" required>
-            <label for="noteboook">Notebook</label><br>
-            <input type="radio" id="tablet" name="tablet" value="tablet" required>
-            <label for="tablet">Tablet</label><br>
-            <input type="radio" id="acessorio" name="acessorio" value="Acessório" required>
-            <label for="acessorio">Acessório</label><br>
-            <input type="radio" id="peca" name="peca" value="Peça" required>
-            <label for="peca">Peça</label><br>
-            <input type="radio" id="outros" name="outros" value="Outros" required>
-            <label for="outros">Outros</label><br>
-            <p>Situação do aparelho:</p>
-            <input type="radio" id="funcionando" name="funcionando" value="Funcionando" required>
-            <label for="funcionando">Funcionando</label><br>
-            <input type="radio" id="funcionando_parcialmente" name="funcionando_parcialmente"
-              value="Funcionando parcialmente" required>
-            <label for="funcionando_parcialmente">Funcionando parcialmente</label><br>
-            <input type="radio" id="quebrado" name="quebrado" value="Quebrado" required>
-            <label for="quebrado">Quebrado </label><br>
-            <div class="col-sm-10 col-md-8 col-lg-6 mb-3">
+          </div>
+          <div class="col-8">
+            <h3 class="mb-3">Situação do aparelho:</h3>
+            <div>
+              <input type="radio" id="funcionando" name="funcionando" value="Funcionando" required>
+              <label for="funcionando">Funcionando</label><br>
+            </div>
+            <div>
+              <input type="radio" id="funcionando_parcialmente" name="funcionando_parcialmente" value="Funcionando parcialmente"
+              required>
+              <label for="funcionando_parcialmente">Funcionando parcialmente</label><br>
+            </div>
+            <div>
+              <input type="radio" id="quebrado" name="quebrado" value="Quebrado" required>
+              <label for="quebrado">Quebrado </label><br>
+            </div>
+            <div class="mt-3 mb-3">
               <label for="txtDescricaoItens" class="form-label">Observação sobre os itens doados</label>
-              <textarea class="form-control" id="txtDescricaoItens" rows="4"></textarea>
+              <textarea class="form-control" id="txtDescricaoItens" rows="6"></textarea>
             </div>
-        </div><br>
-        </form>
+          </div>
+          <div class="mt-3">
+            <input type="button" class="btn btn-primary" type="submit" value="CADASTRAR MAIS EQUIPAMENTOS">
+            <input type="button" class="btn btn-primary" value="SALVAR ITENS DOADOS"
+              onclick="window.location.href=`/cadastro_doacao_sucesso.html`">
+          </div>
       </div>
   </div>
   </main>

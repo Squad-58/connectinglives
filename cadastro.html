@@ -158,17 +158,28 @@
               <label for="numCEP" class="form-label">CEP</label>
               <input type="number" class="form-control" id="numCEP" />
             </div>
-            <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="checkZap"
-                />
-                <label class="form-check-label" for="checkZap">
-                  Deseja receber contato para nos auxiliar como voluntário.
+            <div class="col-12 mb-3">
+              <h3>Você deseja se cadastrar como:</h3>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="rdoBeneficiario">
+                <label class="form-check-label" for="rdoBeneficiario">
+                  Beneficiário
                 </label>
               </div>
-            <div class="col-12 mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="rdoVoluntario">
+                <label class="form-check-label" for="rdoVoluntario">
+                  Voluntário
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="rdoDoador">
+                <label class="form-check-label" for="rdoDoador">
+                  Doador
+                </label>
+              </div>
+            </div>
+            <div class="col-12 mb-3 text-center">
               <input type="button" class="btn btn-primary" value="CADASTRE-SE" onclick="window.location.href=`/cadastro_sucesso.html`">
             </div>
           </form>
