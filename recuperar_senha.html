@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/css/owl/owl.theme.default.min.css" />
     <link rel="stylesheet" href="/css/magnific-popup.css" />
     <link rel="stylesheet" href="/css/main.css" />
-    <title>Connecting Lives :: titulo</title>
+    <title>Connecting Lives :: Recuperar Senha</title>
   </head>
   <body>
     <div class="d-flex flex-column wrapper">
@@ -54,6 +54,18 @@
     </header>
     <main class="flex-fill">
       <div class="container">
+        <div class="row justify-content-center">
+          <form class="col-sm-10 col-md-8 col-lg-6 mb-3">
+            <h1 class="mb-3">Recuperar Senha</h1>
+            <hr>
+            <span>Digite o e-mail cadastrado, para receber um link para cadastrar uma nova senha.</span><br>           
+            <div class="form-floating my-3">
+              <label class="mb-2" for="txtEmailLogin">E-mail</label>
+              <input type="email" class="form-control" autofocus id="txtEmailLogin" placeholder=" ">
+            </div>
+            <input type="button" class="btn btn-danger" value="Recuperar Senha" onclick="window.location.href='/recuperar_senha_sucesso.html'">
+          </form>
+        </div>
       </div>
     </main>
     <!--FOOTER-->
