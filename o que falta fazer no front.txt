@@ -1,8 +1,8 @@
 páginas ok:
 
+index
 cadastro_doacao_sucesso
 cadastro_sucesso
-index
 cadastro
 login
 recuperar_senha
@@ -13,10 +13,9 @@ sobre
 paginas a ajustar:
 
 beneficiários (ajustar carrousel)
+grupo (ajustar carrousel)
+voluntários (ajustar carrousel)
 cadastro_doador (ajustar responsividade)
 cadastro_voluntario (criar conteudo da pág)
-voluntários (ajustar carrousel)
 parcerias (ajustar imagens dos cards)
 perfil (criar o conteúdo da pág)
-grupo (ajustar carrousel)
-
