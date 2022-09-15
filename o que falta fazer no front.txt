@@ -8,14 +8,16 @@ login
 recuperar_senha
 recuperar_senha_sucesso
 sobre
+cadastro_doador 
+
 
 
 paginas a ajustar:
-
-beneficiários (ajustar carrousel)
-grupo (ajustar carrousel)
-voluntários (ajustar carrousel)
-cadastro_doador (ajustar responsividade)
+beneficiários (falta escrever alguns exemplos de ações)
+grupo (falta colocar o nome e foto dos integrantes)
+voluntários (falta escrever alguns exemplos de ações)
 cadastro_voluntario (criar conteudo da pág)
-parcerias (ajustar imagens dos cards)
 perfil (criar o conteúdo da pág)
+parcerias (ajustar imagens dos cards)
+
+
